@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --text-black: #303030;
+  --text-blue: #3E90FF;
+  --text-blue-dark: #1155b4;
+  --color-light-blue: #E2EEFF;
+  --color-blue: #3E90FF;
+  --color-blue-dark: #1155b4;
+  --color-white: #FFFFFF;
+  --color-gray: #F5F5F5;
+  --color-gray-dark: #E0E0E0;
+  --color-red: #FF3B30;
+  --color-green: #34C759;
+  --color-yellow: #FFCC00;
+  --color-purple: #AF52DE;
+  --color-orange: #FF9500;
+  --color-pink: #FF2D55;
+  --color-teal: #5AC8FA;
+  --color-indigo: #5856D6;
+  --color-mint: #00C7BE;
+  --color-brown: #A2845E;
+  --color-cyan: #32ADE6;
+  --color-lime: #CDDC39;
+  --color-deep-purple: #673AB7;
+  --color-light-green: #8BC34A;
+  --color-amber: #FFC107;
+  --color-deep-orange: #FF5722;
+  --color-blue-grey: #607D8B;
+  --color-red-light: #FF6B6B;
+  --color-green-light: #4CAF50;
+  --color-yellow-light: #FFD93D;
+  --color-purple-light: #9C27B0;
+  --color-orange-light: #FF9800;
+  --color-pink-light: #E91E63;
+  --color-teal-light: #00BCD4;
+  --color-indigo-light: #3F51B5;
+  --color-mint-light: #009688;
+  --color-brown-light: #795548;
+  --color-cyan-light: #00BCD4;
+  --color-lime-light: #CDDC39;
+  --color-deep-purple-light: #673AB7;
+  --color-light-green-light: #8BC34A;
+  --color-amber-light: #FFC107;
+  --color-deep-orange-light: #FF5722;
+  --color-blue-grey-light: #607D8B;
+  --color-red-dark: #D32F2F;
+  --color-green-dark: #388E3C;
+  --color-yellow-dark: #F9A825;
+  --color-purple-dark: #7B1FA2;
+  --color-orange-dark: #F57C00;
+  --color-pink-dark: #C2185B;
+  --color-teal-dark: #00838F;
+  --color-indigo-dark: #303F9F;
+  --color-mint-dark: #00796B;
+  --color-brown-dark: #5D4037;
+  --color-cyan-dark: #0097A7;
+  --color-lime-dark: #827717;
+  --color-deep-purple-dark: #512DA8;
+  --color-light-green-dark: #689F38;
+  --color-amber-dark: #FFA000;
+  --color-deep-orange-dark: #E64A19;
+  --color-blue-grey-dark: #455A64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para los popups */
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: white;
+}
+
+/* Flecha personalizada */
+.mapboxgl-popup:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.1); */
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+/* Ocultar controles no deseados */
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
